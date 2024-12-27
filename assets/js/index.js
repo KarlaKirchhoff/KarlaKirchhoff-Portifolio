@@ -121,3 +121,37 @@ function secEscolaridade(){
 
 sobreMim()
 secEscolaridade()
+
+
+
+/*
+
+<section class="sec-list">
+            <h2>atividades</h2>
+
+            <h5>em andamento</h5>
+            <div class="list-item">
+                <div class="info-list-item">
+                    <p class="nome-instituicao">Descompactador de arquivos</p>
+                    <p class="nome-curso">Compactar e Descompactar arquivos '.zip'
+                        <span class="linguagens">HTML, CSS E Javascript</span>
+                    </p>
+                    <p class="duracao">01/2023</p>
+                </div> <!-- .list-item -->
+                <span class="hover">-- executar --</span>
+            </div> <!-- .list-item" -->
+
+            <h5>Concluído</h5>
+            <div class="list-item">
+                <div class="info-list-item">
+                    <p class="nome-instituicao">Descompactador de arquivos</p>
+                    <p class="nome-curso">Compactar e Descompactar arquivos '.zip'
+                        <span class="linguagens">HTML, CSS E Javascript</span>
+                    </p>
+                    <p class="duracao">01/2023 <br> 12/2026</p>
+                </div> <!-- .list-item -->
+                <span class="hover">-- executar --</span>
+            </div> <!-- .list-item" -->
+        </section>
+
+*/

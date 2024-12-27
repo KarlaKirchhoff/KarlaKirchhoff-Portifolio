@@ -24,8 +24,8 @@ class Perfil{
 
         this.cursoTecnico = [
             {
-                nome: 'Análise e Desenvolvimento de Sistemas',
-                instituicao: 'IFPR',
+                nome: 'Informática para Internet',
+                instituicao: 'Senac',
                 dtInicio: '2023-03-01',
                 dtConclusao: '2026-12-15',
                 desc: '',
@@ -74,6 +74,14 @@ class Perfil{
             {nome:'design', icone:''},
             {nome:'projetos', icone:''}
         ];
+
+        this.projetos = [
+            {nome: 'Site Senac', link:'', img:''},
+            {nome: 'Curriculo Bruno', link:'', img:''},
+            {nome: 'Jogo Mario', link:'', img:''},
+            {nome: 'Landing Page', link:'', img:''},
+            {nome: 'Ecommerce MS Flix', link:'', img:''}
+        ]
 
         this.objetivos = ['Certificação Linux', 'Trabalhar Home Office', 'Concluir faculdade', 'Alguma certificação em Inglês', 'Aprimorar Modelagem 3D', 'Aprimorar Github']; 
 
