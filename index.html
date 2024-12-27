@@ -43,91 +43,17 @@
 
     <!-- Conteúdo -->
     <main class="container">
-        <section class="sobre-mim sec1">
-            <div class="habilidades grid-icons">
-                <div>
-                    <ion-icon name="code-working-outline"></ion-icon>
-                    <small>Programação</small>
-                </div>
-
-                <div>
-                    <ion-icon name="hardware-chip-outline"></ion-icon>
-                    <small>Manutenção</small>
-                </div>
-                <div>
-                    <ion-icon name="school-outline"></ion-icon>
-                    <small>conhecimento</small>
-                </div>
+        <section class="sobre-mim sec1" id="sobreMim-index">
+            <div class="habilidades grid-icons" id="sobreMim-interesses">
             </div> <!-- .grid-icons -->
 
-            <div class="texto">
-                <h2>Sobre Mim</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui eos illo voluptas nobis cumque,
-                    exillum, et laboriosam provident adipisci recusandae veritatis mollitia tenetur eligendi magnam
-                    soluta, accusamus doloremque. Quisquam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos aut rem earum dignissimos
-                    explicabo neque accusantium, deserunt provident magnam. Dolor minima voluptas similique ipsa
-                    consectetur necessitatibus harum recusandae porro.</p>
-            </div> <!-- .texto -->
+            <div class="texto" id="sobreMim-texto"><!-- js --></div> 
 
-            <div class="tecnologias grid-icons">
-                <div>
-                    <small>Javascript</small>
-                    <ion-icon name="logo-javascript"></ion-icon>
-                </div>
-                <div>
-                    <small>HTML</small>
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
-                <div>
-                    <small>CSS</small>
-                    <ion-icon name="logo-html5"></ion-icon>
-                </div>
+            <div class="tecnologias grid-icons" id="sobreMim-tecnologias">
             </div> <!-- .tecnologias grid-icons col-3 -->
         </section> <!-- .sobre-mim -->
 
-        <section class="sec-escolaridade sec-list">
-            <h2>Formação Acadêmica</h2>
-
-            <h5>Graduação</h5>
-            <div class="list-item">
-                <div class="info-list-item" style="background-color: var(--cor-branco-transp);">
-                    <p class="nome-instituicao">IFPR</p>
-                    <p class="nome-curso">Tecnólogo em Análise e Desenvolvimento de sistemas</p>
-                    <p class="duracao">01/2023 - 12/2026</p>
-                </div> <!-- .list-item -->
-                <span class="hover">...</span>
-            </div> <!-- .sec-escolaridade sec-list  -- 1 -->
-
-            <h5>Curso Técnico</h5>
-            <div class="list-item" style="background-color: var(--cor-branco-transp);">
-                <div class="info-list-item">
-                    <p class="nome-instituicao">SENAC</p>
-                    <p class="nome-curso">Informática para Internet</p>
-                    <p class="duracao">01/2024 - 12/2025</p>
-                </div> <!-- .list-item -->
-                <span class="hover">...</span>
-            </div> <!-- .sec-escolaridade sec-list  --  2 -->
-
-            <h5>Cursos</h5>
-            <div class="list-item">
-                <div class="info-list-item">
-                    <p class="nome-instituicao">Fundação bradesco</p>
-                    <p class="nome-curso">Tecnólogo em Análise e Desenvolvimento de sistemas</p>
-                    <p class="duracao">01/2023 - 12/2026</p>
-                </div> <!-- .list-item -->
-                <span class="hover">...</span>
-            </div> <!-- .sec-escolaridade sec-list  -- 3 -->
-            <div class="list-item">
-                <div class="info-list-item">
-                    <p class="nome-instituicao">IFPR</p>
-                    <p class="nome-curso">Tecnólogo em Análise e Desenvolvimento de sistemas</p>
-                    <p class="duracao">01/2023 - 12/2026</p>
-                </div> <!-- .list-item -->
-                <span class="hover">...</span>
-            </div> <!-- .sec-escolaridade sec-list  --3 -->
-
-        </section> <!-- .sec-escolaridade -->
+        <section class="sec-escolaridade sec-list"></section> <!-- .sec-escolaridade -->
 
         <section class="projetos">
             <h2>Projetos</h2>
@@ -230,6 +156,7 @@
     <!-- =================== SCRIPTS =================== -->
     <!-- ícones - ion icons -->
     <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

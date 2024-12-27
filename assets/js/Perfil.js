@@ -3,11 +3,38 @@ class Perfil{
         this.nome = 'Karla';
         this.sobrenome = 'Kirchhoff';
         this.dtNasc = '2002-12-19';
-        this.interesses = ['Programação', 'Eletrônica', 'Design', 'Projetos', 'StartUp'];
+        this.interesses = [
+            {nome:'Programação', icone:"code-working-outline"}, 
+            {nome:'Eletrônica', icone:"hardware-chip-outline"}, 
+            {nome:'Projetos', icone:"school-outline"}, 
+            {nome:'Design', icone:'brush-outline'},
+            {nome:'StartUp', icone:'bulb-outline'}
+        ];
 
-        this.formAcademica = [
+        this.graduacao = [
             {
-                tipo: 'graduacao',
+                nome: 'Análise e Desenvolvimento de Sistemas',
+                instituicao: 'IFPR',
+                dtInicio: '2023-03-01',
+                dtConclusao: '2026-12-15',
+                desc: 'Concluído 3 semestres',
+                grade: ['algoritmos', 'banco de dados', 'desenvolvimento web', 'teoria geral da administração', 'emprendedorismo', 'sistemas operacionais', 'redes de computadores', 'arquitetura de software', 'arquitetura de computadores']
+            }
+        ]
+
+        this.cursoTecnico = [
+            {
+                nome: 'Análise e Desenvolvimento de Sistemas',
+                instituicao: 'IFPR',
+                dtInicio: '2023-03-01',
+                dtConclusao: '2026-12-15',
+                desc: '',
+                grade: []
+            }
+        ]
+
+        this.curso = [
+            {
                 nome: 'Análise e Desenvolvimento de Sistemas',
                 instituicao: 'IFPR',
                 dtInicio: '2023-03-01',
@@ -27,9 +54,9 @@ class Perfil{
         ];
 
         this.lingProg = [
-            { nome: 'html', tagIcone: '', name: '' },
-            { nome: 'css', tagIcone: '', name: '' },
-            { nome: 'javascript', tagIcone: '', name: ''}
+            { nome: 'html', icone:'logo-html5'},
+            { nome: 'css', icone:'logo-css3'},
+            { nome: 'javascript', icone: 'logo-javascript'}
         ];
 
         this.ferramentas = [
@@ -42,6 +69,12 @@ class Perfil{
             {nome:'bootstrap', icone:'', tipo:'dev'}
         ];
 
+        this.habilidades = [
+            {nome:'programação', icone:''},
+            {nome:'design', icone:''},
+            {nome:'projetos', icone:''}
+        ];
+
         this.objetivos = ['Certificação Linux', 'Trabalhar Home Office', 'Concluir faculdade', 'Alguma certificação em Inglês', 'Aprimorar Modelagem 3D', 'Aprimorar Github']; 
 
         this.pontodFortesPersonalidade = ['franqueza', 'criatividade', 'empatia'];
@@ -50,7 +83,7 @@ class Perfil{
         this.qualidades = ['Facilidade em criar Projetos', 'Bom desempenho em situações estressantes', 'Inteligência Emocional', 'Apta para intermediar problemas e/ou situações estressantes', 'Boa comunicação'];
         this.defeitos = ['Administração de projetos sob demanda', 'Organização do tempo', 'Facilidade em dispersar'];
 
-        this.objetivoEmpresa = 'Procuro uma empresa que acolha pequenos estudantes apaixodanados pelo que fazem, que deêmm oportunidades e abram espaço para o desenvolvimento pessoal e profissional. Procuro empresas que precisem de alguém capaz de enxergar projetos e soluções de maneira ampla e criativa, que precisem de alguém com capacidade para desenvolver o backend e frontend, que entenda sobre sistemas operacionais e o mínimo de redes. Procuro empresas que também estejam procurando alguém como eu.'
+        this.objetivoEmpresa = 'Procuro uma empresa que acolha pequenos estudantes apaixodanados pelo que fazem, que deêmm oportunidades e abram espaço para o desenvolvimento pessoal e profissional. Procuro empresas que precisem de alguém capaz de enxergar projetos e soluções de maneira ampla e criativa, que precisem de alguém com capacidade para desenvolver o backend e frontend, que precise de alguém que entenda sobre sistemas operacionais e o mínimo de redes. Procuro empresas que também estejam procurando alguém como eu.'
 
         this.sobreMim_p1 = `Ooio, sou ${this.nome} estudante de T.I tanto na graduação como no ensino técnico, amo oque eu faço e estou em constante aprendizado e evolução (em uma jornada difícil e maravilhosa). Desde que eu me conheço por gente tenho uma facilidade enorme em criar projetos (muitas vezes complexos e ambiciosos, tenho que admitir), especialmente quando se trata de desenvolver novas ideias e buscar soluções criativas para problemas desafiadores. Acredito que minha criatividade é uma das minhas maiores forças, pois me permite pensar fora da caixa e trazer abordagens inovadoras para os desafios que enfrento.`;
 

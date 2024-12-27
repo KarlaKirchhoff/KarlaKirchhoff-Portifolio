@@ -29,7 +29,7 @@ function sobreMimHtml(){
 
     for(let i of interesses){
         const li = document.createElement('li');
-        li.textContent = i;
+        li.textContent = i.nome;
         interessesUl.appendChild(li)
     }
 
