@@ -117,10 +117,37 @@ function secEscolaridade(){
         const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao);
         section.appendChild(item)
     }
-} 
+}
 
-sobreMim()
-secEscolaridade()
+function secProjetos(qtd){
+
+    const projetos = perfil.projetos;
+
+    function carregarInfo(link, linkImg, nome){
+        const a = document.createElement('a');
+        a.setAttribute('class card');
+        a.setAttribute('href', link);
+        const div = document.createElement('div');
+        div.setAttribute('class', 'img-card');
+        const img = document.createElement('img');
+        img.setAttribute('src', linkImg);
+        const p = document.createElement('p');
+        p.textContent = nome;
+    }
+
+    for (let i = 0; i < 8; i++) {
+        carregarInfo(projetos[i].link, projetos[i].img, projetos[i].nome);
+    }
+
+    if(qtd < 8){
+        const res = 8 - qtd;
+    }
+
+}
+
+sobreMim();
+secEscolaridade();
+//secProjetos(8);
 
 
 

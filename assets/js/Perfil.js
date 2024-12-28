@@ -56,7 +56,7 @@ class Perfil{
         this.lingProg = [
             { nome: 'html', icone:'logo-html5'},
             { nome: 'css', icone:'logo-css3'},
-            { nome: 'javascript', icone: 'logo-javascript'}
+            { nome: 'js', icone: 'logo-javascript'}
         ];
 
         this.ferramentas = [
@@ -80,7 +80,8 @@ class Perfil{
             {nome: 'Curriculo Bruno', link:'', img:''},
             {nome: 'Jogo Mario', link:'', img:''},
             {nome: 'Landing Page', link:'', img:''},
-            {nome: 'Ecommerce MS Flix', link:'', img:''}
+            {nome: 'Ecommerce MS Flix', link:'', img:''},
+            {nome: 'Verificar Hora', link:'', img:''}
         ]
 
         this.objetivos = ['Certificação Linux', 'Trabalhar Home Office', 'Concluir faculdade', 'Alguma certificação em Inglês', 'Aprimorar Modelagem 3D', 'Aprimorar Github']; 
