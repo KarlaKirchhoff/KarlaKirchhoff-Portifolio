@@ -459,6 +459,10 @@ h5{
     .address-navbar{
         font-size: 12px;
     }
+
+    #sobreMim-texto p{
+        text-align: center;
+    }
 }
 
 @media (max-width: 515px){
@@ -476,8 +480,52 @@ h5{
         gap: 5px;
     }
 
+    .texto-banner h1{
+        font-size: 25px;
+    }
+
+    .texto-banner > p{
+        font-size: 15px;
+    }
+
+    .texto-banner .btn{
+        font-size: 12px;
+    }
+
     .img-banner div{
         width: 150px; height: 150px;
+    }
+
+    #sobreMim-index{
+        flex-direction: column;
+    }
+
+    #sobreMim-index > div{
+        width: 100%;
+    }
+
+    .grid-icons{
+        padding: 0 !important;
+        margin: 20px 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .grid-icons > div{
+        background-color: #1E1E1E;
+        margin: 0;
+    }
+
+    #sobreMim-interesses{
+        margin-bottom: 30px;
+    }
+
+    #sobreMim-texto h2{
+        position: relative !important;
+    }
+
+    #sobreMim-texto p{
+        padding: 0 30px;
     }
 
 }

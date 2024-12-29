@@ -28,9 +28,6 @@ class ElementosHtml {
                 <li class="hover">
                     <a href="interesses.html">Interesses</a>
                 </li>
-                <li class="hover">
-                    <a href="login.html">Login</a>
-                </li>
             </ul><!-- .links-navbar -->
         </address> <!-- .items-nav -->`;
         header.innerHTML = navbar;
