@@ -29,18 +29,58 @@ class Perfil{
                 dtInicio: '2023-03-01',
                 dtConclusao: '2026-12-15',
                 desc: '',
-                grade: []
+                //grade: []
             }
         ]
 
         this.curso = [
             {
-                nome: 'Análise e Desenvolvimento de Sistemas',
-                instituicao: 'IFPR',
-                dtInicio: '2023-03-01',
-                dtConclusao: '2026-12-15',
+                nome: 'fundamentos da lógica de programação',
+                instituicao: 'Fundacao Bradesco',
+                duracao: 15,
+                dtConclusao: '2023',
                 desc: '',
-                grade: []
+                grade: ['Lógica', 'Algoritmo', 'Pseudocódigo', 'Controle de Fluxo', 'Estruturas de Repetição']
+            },
+            {
+                nome: 'Projetos de Sistemas de T.I.',
+                instituicao: 'Fundacao Bradesco',
+                duracao: 15 ,
+                dtConclusao: '2023',
+                desc: '',
+                grade: ['Processos de Desenvolvimento de Sistemas de Informação', 'Engenharia de Software']
+            },
+            {
+                nome: 'HTML básico e Avançado',
+                instituicao: 'Fundacao Bradesco',
+                duracao: 12 ,
+                dtConclusao: '2022',
+                desc: '',
+                grade: ['tabelas', 'formulários', 'iframes']
+            },
+            {
+                nome: 'Fundamentos do design Gráfico',
+                instituicao: 'Fundacao Bradesco',
+                duracao: undefined ,
+                dtConclusao: '2022',
+                desc: '',
+                grade: ['Principios de Design Gráfico', 'Tipos e formatos de Arquivos']
+            },
+            {
+                nome: 'Fundamentos de T.I - Hardware e Software',
+                instituicao: 'Fundacao Bradesco',
+                duracao: 6 ,
+                dtConclusao: '2021',
+                desc: '',
+                grade: ['Introdução ao Sistema de Computação', 'Conceitos de hardware e software', 'Prevenção e segurança']
+            },
+            {
+                nome: 'Microsoft Excel 2016 - Básico',
+                instituicao: 'Fundacao Bradesco',
+                duracao: 6 ,
+                dtConclusao: '2021',
+                desc: '',
+                grade: ['Editando a pasta de trabalho ou planilha', 'Formatando tabelas e células', 'Trabalhando com fórmulas', 'Gráficos']
             }
         ]
 

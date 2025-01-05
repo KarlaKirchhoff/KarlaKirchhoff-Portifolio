@@ -26,7 +26,7 @@ class ElementosHtml {
                     <a href="sobre.html">Sobre Mim</a>
                 </li>
                 <li class="hover">
-                    <a href="interesses.html">Interesses</a>
+                    <a href="design.html">Design</a>
                 </li>
             </ul><!-- .links-navbar -->
         </address> <!-- .items-nav -->`;

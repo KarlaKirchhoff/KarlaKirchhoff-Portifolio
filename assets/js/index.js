@@ -114,7 +114,8 @@ function secEscolaridade(){
     cursoH5.textContent = 'Cursos';
     section.appendChild(cursoH5);
     for(let i of curso){
-        const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao);
+        const duracao = `${i.duracao}h`;
+        const item = carregarInfo(i.instituicao, i.nome, duracao, i.dtConclusao);
         section.appendChild(item)
     }
 }
