@@ -52,9 +52,9 @@ function sobreMim() {
 
 }
 
-function secEscolaridade(){
+function secEscolaridade() {
 
-    function carregarInfo(nomeInstituicao, nomeCurso, inicio, fim){
+    function carregarInfo(nomeInstituicao, nomeCurso, inicio, fim, descricao, grade) {
         const listItem = document.createElement('div');
         listItem.setAttribute('class', 'list-item');
         const infoListItem = document.createElement('div');
@@ -78,11 +78,53 @@ function secEscolaridade(){
         infoListItem.appendChild(duracao);
         listItem.appendChild(infoListItem);
 
+        /* Tag Span + Função, de clique */
         const span = document.createElement('span');
         span.setAttribute('class', 'hover');
         span.textContent = '...';
-
         listItem.appendChild(span);
+
+        const div = document.createElement('div');
+        div.setAttribute('class', 'info-curso');
+        const descDiv = document.createElement('div');
+        descDiv.setAttribute('class', 'desc-div');
+        const desch4 = document.createElement('h4');
+        desch4.textContent = 'Desrição:'
+        const descP = document.createElement('p');
+        descP.textContent = descricao;
+
+        const gradeDiv = document.createElement('div');
+        gradeDiv.setAttribute('class', 'grade-div');
+        const gradeH4 = document.createElement('h4');
+        gradeH4.textContent = 'Grade:'
+        const gradeOl = document.createElement('ol');
+
+        for(let i of grade){
+            const li = document.createElement('li');
+            li.textContent = `${i};`
+            gradeOl.appendChild(li);
+        }
+
+        const img = document.createElement('img');
+        img.setAttribute('src', './assets/img/perfil.jpg');
+
+        descDiv.appendChild(desch4);
+        descDiv.appendChild(descP);
+        div.appendChild(descDiv);
+
+        gradeDiv.appendChild(gradeH4);
+        gradeDiv.appendChild(gradeOl);
+        div.appendChild(gradeDiv);
+
+        div.appendChild(img);
+
+        listItem.appendChild(div);
+
+        span.addEventListener('click', () => {
+            //mostrar e ocultar itens
+        })
+        /* Tag Span + Função, de clique */
+
         return listItem;
     }
 
@@ -95,8 +137,8 @@ function secEscolaridade(){
     const graduacaoH5 = document.createElement('h5');
     graduacaoH5.textContent = 'Graduação';
     section.appendChild(graduacaoH5);
-    for(let i of graduacoes){
-        const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao);
+    for (let i of graduacoes) {
+        const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao, i.desc, i.grade);
         section.appendChild(item)
     }
 
@@ -104,8 +146,8 @@ function secEscolaridade(){
     const cursoTecnicoh5 = document.createElement('h5');
     cursoTecnicoh5.textContent = 'Curso Técnico';
     section.appendChild(cursoTecnicoh5);
-    for(let i of cursoTecnico){
-        const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao);
+    for (let i of cursoTecnico) {
+        const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao, i.desc, i.grade);
         section.appendChild(item)
     }
 
@@ -113,18 +155,18 @@ function secEscolaridade(){
     const cursoH5 = document.createElement('h5');
     cursoH5.textContent = 'Cursos';
     section.appendChild(cursoH5);
-    for(let i of curso){
+    for (let i of curso) {
         const duracao = `${i.duracao}h`;
-        const item = carregarInfo(i.instituicao, i.nome, duracao, i.dtConclusao);
+        const item = carregarInfo(i.instituicao, i.nome, duracao, i.dtConclusao, i.desc, i.grade);
         section.appendChild(item)
     }
 }
 
-function secProjetos(qtd){
+function secProjetos(qtd) {
 
     const projetos = perfil.projetos;
 
-    function carregarInfo(link, linkImg, nome){
+    function carregarInfo(link, linkImg, nome) {
         const a = document.createElement('a');
         a.setAttribute('class card');
         a.setAttribute('href', link);
@@ -140,7 +182,7 @@ function secProjetos(qtd){
         carregarInfo(projetos[i].link, projetos[i].img, projetos[i].nome);
     }
 
-    if(qtd < 8){
+    if (qtd < 8) {
         const res = 8 - qtd;
     }
 

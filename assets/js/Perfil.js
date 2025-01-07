@@ -29,14 +29,14 @@ class Perfil{
                 dtInicio: '2023-03-01',
                 dtConclusao: '2026-12-15',
                 desc: '',
-                //grade: []
+                grade: []
             }
         ]
 
         this.curso = [
             {
                 nome: 'fundamentos da lógica de programação',
-                instituicao: 'Fundacao Bradesco',
+                instituicao: 'Fundação Bradesco',
                 duracao: 15,
                 dtConclusao: '2023',
                 desc: '',
@@ -44,7 +44,7 @@ class Perfil{
             },
             {
                 nome: 'Projetos de Sistemas de T.I.',
-                instituicao: 'Fundacao Bradesco',
+                instituicao: 'Fundação Bradesco',
                 duracao: 15 ,
                 dtConclusao: '2023',
                 desc: '',
@@ -52,7 +52,7 @@ class Perfil{
             },
             {
                 nome: 'HTML básico e Avançado',
-                instituicao: 'Fundacao Bradesco',
+                instituicao: 'Fundação Bradesco',
                 duracao: 12 ,
                 dtConclusao: '2022',
                 desc: '',
@@ -60,7 +60,7 @@ class Perfil{
             },
             {
                 nome: 'Fundamentos do design Gráfico',
-                instituicao: 'Fundacao Bradesco',
+                instituicao: 'Fundação Bradesco',
                 duracao: undefined ,
                 dtConclusao: '2022',
                 desc: '',
@@ -68,7 +68,7 @@ class Perfil{
             },
             {
                 nome: 'Fundamentos de T.I - Hardware e Software',
-                instituicao: 'Fundacao Bradesco',
+                instituicao: 'Fundação Bradesco',
                 duracao: 6 ,
                 dtConclusao: '2021',
                 desc: '',
@@ -76,7 +76,7 @@ class Perfil{
             },
             {
                 nome: 'Microsoft Excel 2016 - Básico',
-                instituicao: 'Fundacao Bradesco',
+                instituicao: 'Fundação Bradesco',
                 duracao: 6 ,
                 dtConclusao: '2021',
                 desc: '',

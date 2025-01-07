@@ -321,6 +321,37 @@ h5{
                 text-align: center;
                 padding: 10px;
             }
+
+            .list-item .info-curso{
+                padding: 20px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                background-color: rgba(0, 0, 0, 0.829);
+            }
+
+            .list-item .info-curso > div{
+                display: flex;
+                gap: 30px;
+            }
+
+            .list-item .info-curso ol{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .list-item .info-curso li{
+                list-style: circle;
+                text-transform: capitalize;
+            }
+
+            .list-item .info-curso img{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+
         /* /sec-list */
     /* /section */
 
