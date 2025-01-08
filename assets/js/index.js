@@ -54,7 +54,7 @@ function sobreMim() {
 
 function secEscolaridade() {
 
-    function carregarInfo(nomeInstituicao, nomeCurso, inicio, fim, descricao, grade) {
+    function carregarInfo(id, nomeInstituicao, nomeCurso, inicio, fim, descricao, grade) {
         const listItem = document.createElement('div');
         listItem.setAttribute('class', 'list-item');
         const infoListItem = document.createElement('div');
@@ -86,6 +86,7 @@ function secEscolaridade() {
 
         const div = document.createElement('div');
         div.setAttribute('class', 'info-curso');
+        div.setAttribute('id', id)
         const descDiv = document.createElement('div');
         descDiv.setAttribute('class', 'desc-div');
         const desch4 = document.createElement('h4');
@@ -121,9 +122,23 @@ function secEscolaridade() {
         listItem.appendChild(div);
 
         span.addEventListener('click', () => {
-            //mostrar e ocultar itens
+            const div = document.getElementById(id);
+            div.classList.toggle('ativo');
         })
-        /* Tag Span + Função, de clique */
+
+        img.addEventListener('click', ()=>{
+            const modal = document.getElementById('index-modal');
+            modal.classList.toggle('ativo');
+
+            const h2 = document.getElementById('h2-modal');
+            h2.textContent = nomeCurso;
+        })
+
+        const btnFechar = document.getElementById('modal-close-button');
+        btnFechar.addEventListener('click', ()=>{
+            const modal = document.getElementById('index-modal');
+            modal.classList.remove('ativo');
+        })
 
         return listItem;
     }
@@ -137,28 +152,37 @@ function secEscolaridade() {
     const graduacaoH5 = document.createElement('h5');
     graduacaoH5.textContent = 'Graduação';
     section.appendChild(graduacaoH5);
-    for (let i of graduacoes) {
-        const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao, i.desc, i.grade);
-        section.appendChild(item)
+    for (let i in graduacoes) {
+        const id = `graduacao${i}`;
+        const item = carregarInfo(id, graduacoes[i].instituicao, graduacoes[i].nome, graduacoes[i].dtInicio, graduacoes[i].dtConclusao, graduacoes[i].desc, graduacoes[i].grade);
+        section.appendChild(item);
     }
 
     const cursoTecnico = perfil.cursoTecnico;
     const cursoTecnicoh5 = document.createElement('h5');
     cursoTecnicoh5.textContent = 'Curso Técnico';
     section.appendChild(cursoTecnicoh5);
-    for (let i of cursoTecnico) {
-        const item = carregarInfo(i.instituicao, i.nome, i.dtInicio, i.dtConclusao, i.desc, i.grade);
-        section.appendChild(item)
+    for (let i in cursoTecnico) {
+        const id = `curso-tecnico${i}`;
+        const item = carregarInfo(id, cursoTecnico[i].instituicao, cursoTecnico[i].nome, cursoTecnico[i].dtInicio, cursoTecnico[i].dtConclusao, cursoTecnico[i].desc, cursoTecnico[i].grade);
+        section.appendChild(item);
     }
 
     const curso = perfil.curso;
     const cursoH5 = document.createElement('h5');
     cursoH5.textContent = 'Cursos';
     section.appendChild(cursoH5);
-    for (let i of curso) {
-        const duracao = `${i.duracao}h`;
-        const item = carregarInfo(i.instituicao, i.nome, duracao, i.dtConclusao, i.desc, i.grade);
+    for (let i in curso) {
+        const id = `curso${i}`;
+        const duracao = `${curso[i].duracao}h`;
+        const item = carregarInfo(id, curso[i].instituicao, curso[i].nome, duracao, curso[i].dtConclusao, curso[i].desc, curso[i].grade);
         section.appendChild(item)
+
+        /**
+         const duracao = `${i.duracao}h`;
+        const item = carregarInfo(i.instituicao, i.nome, duracao, i.dtConclusao, i.desc, i.grade, );
+        section.appendChild(item)
+         */
     }
 }
 
