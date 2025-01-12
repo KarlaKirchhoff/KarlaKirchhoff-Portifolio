@@ -93,12 +93,12 @@ class Perfil{
         ]
 
         this.redessociais = [
-            { nome: 'facebook', link: ''},
-            { nome: 'instagram', link: ''},
-            { nome: 'whastsapp', link: ''},
-            { nome: 'linkedin', link: ''},
-            { nome: 'github', link: ''},
-            { nome: 'behance', link: ''}
+            { nome: 'facebook', link: 'https://www.facebook.com/karla.kirchhoff.3/', icone:'<ion-icon name="logo-facebook"></ion-icon>', name:'logo-facebook'},
+            { nome: 'instagram', link: 'https://www.instagram.com/karla.kirchhoff?igsh=MWVtY25xcWw4MW50YQ%3D%3D%27', icone:'<ion-icon name="logo-instagram"></ion-icon>', name:'logo-instagram'},
+            { nome: 'whatsapp', link: 'https://wa.me/41984396465', icone:'<ion-icon name="logo-whatsapp"></ion-icon>', name: 'logo-whatsapp'},
+            { nome: 'linkedin', link: 'https://www.linkedin.com/in/karla-kirchhoff-990452204', icone:'<ion-icon class="hover" name="logo-linkedin"></ion-icon>', name: 'logo-linkedin'},
+            { nome: 'github', link: 'https://github.com/KarlaKirchhoff', icone:'<ion-icon name="logo-github"></ion-icon>', name: 'logo-github'},
+            { nome: 'behance', link: 'https://www.behance.net/keikheykirchho', icone:'<ion-icon name="logo-behance"></ion-icon>', name:'logo-behance'}
         ];
 
         this.lingProg = [

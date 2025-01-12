@@ -119,11 +119,21 @@ function secEscolaridade() {
 
         div.appendChild(imgTag);
 
+        const fecharInfoItem = document.createElement('button');
+        fecharInfoItem.setAttribute('class', 'fechar-item hover');
+        fecharInfoItem.textContent = 'X';
+        div.appendChild(fecharInfoItem);
+
         listItem.appendChild(div);
 
         span.addEventListener('click', () => {
             const div = document.getElementById(id);
             div.classList.toggle('ativo');
+        })
+
+        fecharInfoItem.addEventListener('click', ()=>{
+            const div = document.getElementById(id);
+            div.classList.remove('ativo');
         })
 
         imgTag.addEventListener('click', ()=>{

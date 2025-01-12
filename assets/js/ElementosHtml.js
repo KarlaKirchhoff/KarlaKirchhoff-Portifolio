@@ -36,19 +36,53 @@ class ElementosHtml {
     }
 
     criarRodape(){
-        const footer = document.querySelector('.rodape')
+        const footer = document.querySelector('.rodape');
+        const redessociais = perfil.redessociais;
+
+        let github = null;
+        let whatsapp = null;
+        let linkedin = null;
+        let behance = null;
+
+        let githubLink = null;
+        let whatsappLink = null;
+        let linkedinLink = null;
+        let behanceLink = null;
+
+        for(let i of redessociais){
+            if(i.nome === 'github'){
+                github = i.name;
+                githubLink = i.link
+            }
+
+            if(i.nome === 'whatsapp'){
+                whatsapp = i.name;
+                whatsappLink = i.link
+            }
+
+            if(i.nome === 'linkedin'){
+                linkedin = i.name;
+                linkedinLink = i.link
+            }
+
+            if(i.nome === 'behance'){
+                behance = i.name;
+                behanceLink = i.link
+            }
+        }
+
         const rodape = `<div class="footer-icons">
-            <a href="https://github.com/KarlaKirchhoff" target="_blank">
-                <ion-icon class="hover" name="logo-github"></ion-icon>
+            <a href=${githubLink} target="_blank">
+                <ion-icon class="hover" name=${github}></ion-icon>
             </a>
-            <a href="">
-                <ion-icon class="hover" name="logo-whatsapp"></ion-icon>
+            <a href=${whatsappLink} target="_blank">
+                <ion-icon class="hover" name=${whatsapp}></ion-icon>
             </a>
-            <a href="">
-                <ion-icon class="hover" name="logo-linkedin"></ion-icon>
+            <a href=${linkedinLink} target="_blank">
+                <ion-icon class="hover" name=${linkedin}></ion-icon>
             </a>
-            <a href="">
-                <ion-icon class="hover" name="logo-behance"></ion-icon>
+            <a href=${behanceLink} target="_blank">
+                <ion-icon class="hover" name=${behance}></ion-icon>
             </a>
         </div>
         <span>Karla Kirchhoff</span>`;
