@@ -274,7 +274,76 @@ main{
     }
 }
 
+@media (max-width: 580px){
+
+    h2.california{
+        font-size: 40px !important;
+    }
+
+    .sobre-mim .img-area{
+        padding: 0px !important;
+    }
+
+    .sec-interesses .interesses{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    #int-objetivos{
+        grid-column: 1 / 3;
+    }
+
+    #recado-final{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    main{
+        width: 90%;
+        padding: 0px !important;
+    }
+
+    #sobre-mim-conteudo{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #sec-empresas{
+        font-size: 22px;
+    }
+
+    .proj-sites iframe{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 417px){
+
+    #titulo-container p{
+        text-align: center;
+    }
+
+    .sec-interesses .interesses{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    #int-objetivos{
+    grid-column: 1 / 2;
+    }
+}
+
+
 @media (max-width: 350px){
+    #titulo-container h1{
+        font-size: 30px !important;
+    }
+
+    #titulo-container p{
+        font-size: 13px;
+    }
+
     #proj-carrossel-iframes div{
         height: 200px;
     }
