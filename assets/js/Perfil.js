@@ -18,7 +18,8 @@ class Perfil{
                 dtInicio: '2023-03-01',
                 dtConclusao: '2026-12-15',
                 desc: 'Concluído 3 semestres',
-                grade: ['algoritmos', 'banco de dados', 'desenvolvimento web', 'teoria geral da administração', 'emprendedorismo', 'sistemas operacionais', 'redes de computadores', 'arquitetura de software', 'arquitetura de computadores']
+                grade: ['algoritmos', 'banco de dados', 'desenvolvimento web', 'teoria geral da administração', 'emprendedorismo', 'sistemas operacionais', 'redes de computadores', 'arquitetura de software', 'arquitetura de computadores'],
+                img: './asssets/img/certificados/'
             }
         ]
 
@@ -29,7 +30,8 @@ class Perfil{
                 dtInicio: '2023-03-01',
                 dtConclusao: '2026-12-15',
                 desc: '',
-                grade: []
+                grade: [],
+                img: './asssets/img/certificados/'
             }
         ]
 
@@ -40,7 +42,8 @@ class Perfil{
                 duracao: 15,
                 dtConclusao: '2023',
                 desc: '',
-                grade: ['Lógica', 'Algoritmo', 'Pseudocódigo', 'Controle de Fluxo', 'Estruturas de Repetição']
+                grade: ['Lógica', 'Algoritmo', 'Pseudocódigo', 'Controle de Fluxo', 'Estruturas de Repetição'],
+                img: './assets/img/certificados/fundLogicaProgramacao.png'
             },
             {
                 nome: 'Projetos de Sistemas de T.I.',
@@ -48,7 +51,8 @@ class Perfil{
                 duracao: 15 ,
                 dtConclusao: '2023',
                 desc: '',
-                grade: ['Processos de Desenvolvimento de Sistemas de Informação', 'Engenharia de Software']
+                grade: ['Processos de Desenvolvimento de Sistemas de Informação', 'Engenharia de Software'],
+                img: './assets/img/certificados/ptojSistemasTI'
             },
             {
                 nome: 'HTML básico e Avançado',
@@ -56,7 +60,8 @@ class Perfil{
                 duracao: 12 ,
                 dtConclusao: '2022',
                 desc: '',
-                grade: ['tabelas', 'formulários', 'iframes']
+                grade: ['tabelas', 'formulários', 'iframes'],
+                img: './assets/img/certificados/html.png'
             },
             {
                 nome: 'Fundamentos do design Gráfico',
@@ -64,7 +69,8 @@ class Perfil{
                 duracao: undefined ,
                 dtConclusao: '2022',
                 desc: '',
-                grade: ['Principios de Design Gráfico', 'Tipos e formatos de Arquivos']
+                grade: ['Principios de Design Gráfico', 'Tipos e formatos de Arquivos'],
+                img: './assets/img/certificados/fundDesignGrafico.png'
             },
             {
                 nome: 'Fundamentos de T.I - Hardware e Software',
@@ -72,7 +78,8 @@ class Perfil{
                 duracao: 6 ,
                 dtConclusao: '2021',
                 desc: '',
-                grade: ['Introdução ao Sistema de Computação', 'Conceitos de hardware e software', 'Prevenção e segurança']
+                grade: ['Introdução ao Sistema de Computação', 'Conceitos de hardware e software', 'Prevenção e segurança'],
+                img: './assets/img/certificados/fundamentosTI.png'
             },
             {
                 nome: 'Microsoft Excel 2016 - Básico',
@@ -80,7 +87,8 @@ class Perfil{
                 duracao: 6 ,
                 dtConclusao: '2021',
                 desc: '',
-                grade: ['Editando a pasta de trabalho ou planilha', 'Formatando tabelas e células', 'Trabalhando com fórmulas', 'Gráficos']
+                grade: ['Editando a pasta de trabalho ou planilha', 'Formatando tabelas e células', 'Trabalhando com fórmulas', 'Gráficos'],
+                img: './assets/img/certificados/excel2016Basico.png'
             }
         ]
 
@@ -116,12 +124,12 @@ class Perfil{
         ];
 
         this.projetos = [
-            {nome: 'Site Senac', link:'', img:''},
-            {nome: 'Curriculo Bruno', link:'', img:''},
-            {nome: 'Jogo Mario', link:'', img:''},
-            {nome: 'Landing Page', link:'', img:''},
-            {nome: 'Ecommerce MS Flix', link:'', img:''},
-            {nome: 'Verificar Hora', link:'', img:''}
+            {nome: 'Site Senac', link:'', img:'assets/paginas/landingpage-main/index.html'},
+            {nome: 'Curriculo Bruno', link:'', img:'assets/paginas/landingpage-main/index.html'},
+            {nome: 'Jogo Mario', link:'', img:'assets/paginas/landingpage-main/index.html'},
+            {nome: 'Landing Page', link:'', img:'assets/paginas/landingpage-main/index.html'},
+            {nome: 'Ecommerce MS Flix', link:'assets/paginas/landingpage-main/index.html', img:''},
+            {nome: 'Verificar Hora', link:'', img:'assets/paginas/landingpage-main/index.html'}
         ]
 
         this.objetivos = ['Certificação Linux', 'Trabalhar Home Office', 'Concluir faculdade', 'Alguma certificação em Inglês', 'Aprimorar Modelagem 3D', 'Aprimorar Github']; 

@@ -54,7 +54,7 @@ function sobreMim() {
 
 function secEscolaridade() {
 
-    function carregarInfo(id, nomeInstituicao, nomeCurso, inicio, fim, descricao, grade) {
+    function carregarInfo(id, nomeInstituicao, nomeCurso, inicio, fim, descricao, grade, img) {
         const listItem = document.createElement('div');
         listItem.setAttribute('class', 'list-item');
         const infoListItem = document.createElement('div');
@@ -106,8 +106,8 @@ function secEscolaridade() {
             gradeOl.appendChild(li);
         }
 
-        const img = document.createElement('img');
-        img.setAttribute('src', './assets/img/perfil.jpg');
+        const imgTag = document.createElement('img');
+        imgTag.setAttribute('src', img);
 
         descDiv.appendChild(desch4);
         descDiv.appendChild(descP);
@@ -117,7 +117,7 @@ function secEscolaridade() {
         gradeDiv.appendChild(gradeOl);
         div.appendChild(gradeDiv);
 
-        div.appendChild(img);
+        div.appendChild(imgTag);
 
         listItem.appendChild(div);
 
@@ -126,12 +126,15 @@ function secEscolaridade() {
             div.classList.toggle('ativo');
         })
 
-        img.addEventListener('click', ()=>{
+        imgTag.addEventListener('click', ()=>{
             const modal = document.getElementById('index-modal');
             modal.classList.toggle('ativo');
 
             const h2 = document.getElementById('h2-modal');
             h2.textContent = nomeCurso;
+
+            const imgModal = document.getElementById('img-modal');
+            imgModal.setAttribute('src', img)
         })
 
         const btnFechar = document.getElementById('modal-close-button');
@@ -154,7 +157,7 @@ function secEscolaridade() {
     section.appendChild(graduacaoH5);
     for (let i in graduacoes) {
         const id = `graduacao${i}`;
-        const item = carregarInfo(id, graduacoes[i].instituicao, graduacoes[i].nome, graduacoes[i].dtInicio, graduacoes[i].dtConclusao, graduacoes[i].desc, graduacoes[i].grade);
+        const item = carregarInfo(id, graduacoes[i].instituicao, graduacoes[i].nome, graduacoes[i].dtInicio, graduacoes[i].dtConclusao, graduacoes[i].desc, graduacoes[i].grade, graduacoes[i].img);
         section.appendChild(item);
     }
 
@@ -164,7 +167,7 @@ function secEscolaridade() {
     section.appendChild(cursoTecnicoh5);
     for (let i in cursoTecnico) {
         const id = `curso-tecnico${i}`;
-        const item = carregarInfo(id, cursoTecnico[i].instituicao, cursoTecnico[i].nome, cursoTecnico[i].dtInicio, cursoTecnico[i].dtConclusao, cursoTecnico[i].desc, cursoTecnico[i].grade);
+        const item = carregarInfo(id, cursoTecnico[i].instituicao, cursoTecnico[i].nome, cursoTecnico[i].dtInicio, cursoTecnico[i].dtConclusao, cursoTecnico[i].desc, cursoTecnico[i].grade, cursoTecnico[i].img);
         section.appendChild(item);
     }
 
@@ -175,7 +178,7 @@ function secEscolaridade() {
     for (let i in curso) {
         const id = `curso${i}`;
         const duracao = `${curso[i].duracao}h`;
-        const item = carregarInfo(id, curso[i].instituicao, curso[i].nome, duracao, curso[i].dtConclusao, curso[i].desc, curso[i].grade);
+        const item = carregarInfo(id, curso[i].instituicao, curso[i].nome, duracao, curso[i].dtConclusao, curso[i].desc, curso[i].grade, curso[i].img);
         section.appendChild(item)
 
         /**
