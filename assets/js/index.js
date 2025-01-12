@@ -1,5 +1,9 @@
+import { ElementosHtml } from "./ElementosHtml.js";
 import { Perfil } from "./Perfil.js";
 const perfil = new Perfil();
+const html = new ElementosHtml;
+
+html.secProjetos('cards-projetos')
 
 function sobreMim() {
     //const section = document.getElementById('sobreMim-index')

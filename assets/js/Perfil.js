@@ -124,12 +124,12 @@ class Perfil{
         ];
 
         this.projetos = [
-            {nome: 'Site Senac', img:'./assets/img/logo/logoprojetos.png', link:'assets/paginas/landingpage-main/index.html'},
-            {nome: 'Curriculo Bruno', img:'./assets/img/logo/logoprojetos.png', link:'assets/paginas/landingpage-main/index.html'},
-            {nome: 'Jogo Mario', img:'./assets/img/logo/logoprojetos.png', link:'assets/paginas/landingpage-main/index.html'},
-            {nome: 'Landing Page', img:'./assets/img/logo/logoprojetos.png', link:'assets/paginas/landingpage-main/index.html'},
-            {nome: 'Ecommerce MS Flix', link:'assets/paginas/landingpage-main/index.html', img:'./assets/img/logo/logoprojetos.png'},
-            {nome: 'Verificar Hora', img:'./assets/img/logo/logoprojetos.png', link:'assets/paginas/landingpage-main/index.html'}
+            {nome: 'Site Senac', img:'./assets/img/logo/logoprojetos.png', link:'#'},
+            {nome: 'Curriculo Bruno', img:'./assets/img/logo/logoprojetos.png', link:'#'},
+            {nome: 'Jogo Mario', img:'./assets/img/logo/logoprojetos.png', link:'#'},
+            {nome: 'Landing Page', img:'./assets/img/logo/logoprojetos.png', link:'#'},
+            {nome: 'Ecommerce MS Flix', link:'#', img:'./assets/img/logo/logoprojetos.png'},
+            {nome: 'Verificar Hora', img:'./assets/img/logo/logoprojetos.png', link:'#'}
         ]
 
         this.objetivos = ['Certificação Linux', 'Trabalhar Home Office', 'Concluir faculdade', 'Alguma certificação em Inglês', 'Aprimorar Modelagem 3D', 'Aprimorar Github']; 
