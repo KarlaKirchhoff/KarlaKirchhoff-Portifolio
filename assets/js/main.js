@@ -4,6 +4,7 @@ const html = new ElementosHtml();
 const perfil = new Perfil();
 
 html.criarNavbar();
+html.secProjetos('cards-projetos')
 html.criarRodape()
 html.sobreMimExtendido('sobremim-article-texto', 'sobremim-article-texto-p');
 

@@ -142,21 +142,35 @@ class ElementosHtml {
         }
     }
 
-    formAcademica(idElemento, classesDiv){
-        const elemento = document.getElementById(idElemento);
-        const array = perfil.formAcademica;
+    secProjetos(id) {
 
-        for(let i of array){
+        const cards = document.getElementById(id);
+        const projetos = perfil.projetos;
+    
+        function carregarInfo(link, linkImg, nome) {
+            const card = document.createElement('a');
+            card.setAttribute('class', 'card hover');
+            card.setAttribute('href', link);
             const div = document.createElement('div');
-            div.setAttribute('class', 'list-item');
-            const div2 = document.createElement('div');
-            div2.setAttribute('class', 'info-list-item');
-            const instituicao = document.createElement('p');
-            instituicao.setAttribute('class', 'nome-instituicao');
-            const curso = document.createElement('p');
-            curso.setAttribute('class', 'nome-curso');
+            div.setAttribute('class', 'img-card');
+            const img = document.createElement('img');
+            img.setAttribute('src', linkImg);
+            const p = document.createElement('p');
+            p.innerText = nome;
+    
+            div.appendChild(img);
+            card.appendChild(div);
+            card.appendChild(p);
+    
+            return card
         }
-    }
+    
+        for (let i of projetos) {
+            const card = carregarInfo(i.link, i.img, i.nome);
+            cards.append(card);
+        } 
+    }    
+
 }
 
 export { ElementosHtml };
