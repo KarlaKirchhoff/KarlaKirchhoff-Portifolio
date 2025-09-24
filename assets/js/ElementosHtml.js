@@ -1,4 +1,4 @@
-import { Perfil } from "./Perfil.js"
+import { Perfil } from "../../web/src/models/Perfil.js"
 const perfil = new Perfil;
 
 class ElementosHtml {

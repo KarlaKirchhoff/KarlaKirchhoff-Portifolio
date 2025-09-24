@@ -1,5 +1,5 @@
 import { ElementosHtml } from "./ElementosHtml.js";
-import { Perfil } from "./Perfil.js";
+import { Perfil } from "../../web/src/models/Perfil.js";
 const perfil = new Perfil();
 const html = new ElementosHtml;
 
@@ -26,6 +26,7 @@ function sobreMim() {
 
     /* area de texto */
     const area = document.getElementById('sobreMim-texto');
+    
     const h2 = document.createElement('h2');
     h2.textContent = 'Sobre Mim';
     const p1 = document.createElement('p');
