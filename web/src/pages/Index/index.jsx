@@ -35,7 +35,7 @@ export default function IndexPage() {
           <ul className={styles["lista-tecnologias"]}>
             <li>Desktop</li>
             <li>Mobile</li>
-            <li>Sites</li>
+            <li>Sites</li> 
             <li>PWA</li>
             <li>Banco de Dados</li>
             <li>Interface</li>
