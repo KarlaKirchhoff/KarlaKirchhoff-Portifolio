@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'font-manuscrita';
+    src: url('/fonts/manuscrita.otf');
+}
+
+@font-face {
+    font-family: 'GoldenBlade';
+    src: url('/fonts/GoldenBlade.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wf-100 {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('/img/bg/fundo-cidade-cyberpunk.jpg');
+}
+
+.camada-cor {
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.content-area {
+    height: 100%;
+    position: absolute;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+    z-index: 50;
+}
+
+.links {
+    background-color: rebeccapurple;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links ul {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    padding: 5px 20px;
+    font-size: 20px;
+    color: rgb(255, 222, 252);
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid rgb(255, 222, 252);
+}
+
+.links a:hover {
+    color: rgb(234, 127, 255);
+    border-color: rgb(234, 127, 255);
+}
+
+.txt {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.txt .h1-1 {
+    font-family: 'GoldenBlade';
+    font-size: 150px;
+    letter-spacing: 2px;
+    line-height: 50%;
+    color: rgb(255, 0, 98);
+}
+
+.txt .h1-2 {
+    font-family: 'font-manuscrita';
+    font-size: 60px;
+    text-shadow: 0 0 10px;
+    color: rgb(153, 255, 127);
+}
+
+.content-area p {
+    position: fixed;
+    bottom: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 100;
+}
+
+.img-area {
+    position: fixed;
+    right: 0;
+    width: 600px;
+    height: 100%;
+    background-image: url('/img/avatar/art-karla-kirchhoff.png');
+}
+
+@media (max-width: 755px) {
+
+    .links ul {
+        gap: 25px;
+    }
+
+    .links a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 710px) {
+
+    .content-area {
+        width: 100vw;
+    }
+
+    .links a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 710px) {
+    .content-area {
+        padding: 80px;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .content-area {
+        padding: 80px 20px;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .links ul {
+        background-color: rebeccapurple;
+    }
+
+    .txt .h1-1 {
+        font-size: 130px;
+        line-height: 50%;
+    }
+
+    .txt .h1-2 {
+        font-size: 50px;
+        color: rgb(94, 255, 54);
+    }
+}
+
+@media (max-width: 485px) {
+    .txt .h1-1 {
+        font-size: 120px;
+    }
+
+    .links ul {
+        gap: 15px;
+    }
+
+    .content-area p {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 485px) {
+    .txt {
+        margin-top: 30px;
+    }
+
+    .txt .h1-1 {
+        font-size: 100px;
+    }
+
+    .txt .h1-2 {
+        font-size: 30px;
+    }
+
+    .img-area {
+        width: 100vw;
+        background-position: -100px 0;
+    }
+}
+
+@media (max-width: 410px) {
+
+    .content {
+        overflow-x: hidden;
+    }
+
+    .content-area {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .links ul {
+        gap: 10px;
+    }
+
+    .links ul a {
+        padding: 10px;
+    }
+
+    .txt .h1-1 {
+        font-size: 80px;
+    }
+
+}
