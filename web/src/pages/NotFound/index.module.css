@@ -25,12 +25,6 @@
     height: 100%;
 }
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .content {
     width: 100vw;
     height: 100vh;
@@ -39,12 +33,21 @@ main {
 }
 
 .camada-cor {
-    background-color: rgba(0, 0, 0, 0.726);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .content-area {
-    height: 100%;
     position: absolute;
+    top: 0;
+    height: 100%;
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -113,6 +116,7 @@ main {
 .img-area {
     position: fixed;
     right: 0;
+    top: 0;
     width: 600px;
     height: 100%;
     background-image: url('/img/avatar/art-karla-kirchhoff.png');

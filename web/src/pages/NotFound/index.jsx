@@ -2,17 +2,26 @@ import React from "react";
 import styles from './index.module.css'
 
 export default function NotFoundPage() {
+
+    const links = [
+        { pagina: 'Home', link: '#' },
+        { pagina: 'Página', link: '#' },
+        { pagina: 'Currículo', link: '#' },
+        { pagina: 'Design', link: '#' },
+    ]
+
     return (
         <div className={styles.content}>
-            <div className={styles["camada-cor wf-100 flex-center"]}>
-                <main className={styles["wf-100 "]}>
+            <div className={styles["camada-cor"]}>
+                <main className={styles["wf-100"]}>
                     <div className={styles["content-area"]}>
                         <nav className={styles.links}>
                             <ul>
-                                <li><a href="#" className={styles["nav-link"]}>Home</a></li>
-                                <li><a href="#" className={styles["nav-link"]}>Página</a></li>
-                                <li><a href="#" className={styles["nav-link"]}>Currículo</a></li>
-                                <li><a href="#" className={styles["nav-link"]}>Design</a></li>
+                                {links.map((i, idx) => (
+                                    <li key={idx}>
+                                        <a href={i.link} className={styles["nav-link"]}>{i.pagina}</a>
+                                    </li>
+                                ))}
                             </ul>
                         </nav>
                         <div className={styles.txt}>
