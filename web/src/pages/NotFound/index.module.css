@@ -119,7 +119,10 @@ main {
     top: 0;
     width: 600px;
     height: 100%;
+    background-repeat: no-repeat;
     background-image: url('/img/avatar/art-karla-kirchhoff.png');
+    background-position: 120px top;
+    background-size: cover;
 }
 
 @media (max-width: 755px) {
