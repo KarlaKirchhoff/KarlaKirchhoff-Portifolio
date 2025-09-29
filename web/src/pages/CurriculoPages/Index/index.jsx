@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './index.module.css'
-import Header from '../../../shared/componentes/Header';
+import Header from '../../../shared/componentes/CurriculoPage/Header';
+import Banner from '../../../shared/componentes/CurriculoPage/Banner';
 import Modal from './ModalCurso';
 
 import Perfil from '../../../models/Perfil';
@@ -9,22 +10,14 @@ const perfil = new Perfil();
 export default function CurriculoPage() {
 
     const [openInfoCurso, setOpenInfoCurso] = useState(false);
-    const [dadosCurso, setDadosCurso] = useState(undefined);
     const [openCertificado, setOpenCertificado] = useState(false);
     const [dadosCertificado, setDadosCertificado] = useState(undefined);
 
-    function toggleAtivo() {
-        const modal = document.getElementById('index-modal');
-        modal.classList.toggle('ativo');
-    }
-
     const handleVerInfoCurso = () => {
         setOpenInfoCurso(true)
-        toggleAtivo()
     }
 
     const handleFecharInfoCurso = () => {
-        toggleAtivo()
         setOpenInfoCurso(false)
     }
 
@@ -44,37 +37,41 @@ export default function CurriculoPage() {
         <>
             <main className={styles.container}>
                 <Header />
-                <section className={styles["sobre-mim"]} id="sobreMim-index">
+                <Banner />
 
-                    <div className={styles["habilidades grid-icons"]} id="sobreMim-interesses" >
-                        {interesses.map((i, idx) => (
-                            <div key={idx}>
+                <div className={styles["grid-icons"]} id="sobreMim-interesses" >
+                    {interesses.map((i, idx) => (
+                        <div key={idx}>
+                            <div className={styles["area-icone"]}>
                                 <ion-icon name={i.icone} />
-                                <small>{i.nome}</small>
                             </div>
-                        ))}
-                    </div>
+                            <small>{i.nome}</small>
+                        </div>
+                    ))}
+                </div>
+
+                <section className={styles["sobre-mim"]} id="sobreMim-index">
 
                     <div className={styles.texto} id="sobreMim-texto">
                         <h2>Sobre Mim</h2>
                         <p>{perfil.sobreMim_p1}</p>
-                        <p>{perfil.objetivoEmpresa}</p>
                     </div>
 
-                    <section className={styles["sec-escolaridade sec-list"]}>
+                    <section className={styles["sec-list"]}>
                         <ul>
                             {cursos.map((i, idx) => (
                                 <li key={idx} className={styles["list-item"]}>
-                                    <div className={styles["info-list-item"]} style={{ backgroundColor: "var(--cor-branco-transp)" }}>
+                                    <div className={styles["info-list-item"]}>
 
-                                        <p className={styles["nome-instituicao"]}>{i.instituicao}</p>
-                                        <p className={styles["nome-curso"]}>{i.nome}</p>
-                                        <p className={styles["duracao"]}>{i.duracao}</p>
+                                        <h5 className={styles["nome-instituicao"]}>{i.instituicao}</h5>
+                                        <h5 className={styles["nome-curso"]}>{i.nome}</h5>
+                                        <h5 className={styles["duracao"]}>{i.duracao} horas</h5>
 
                                     </div>
 
                                     <span className="hover"
-                                        onClick={() => handleVerInfoCurso}>...</span>
+                                        onClick={() => handleVerInfoCurso()}
+                                    >...</span>
 
                                     {openInfoCurso && (
                                         <div className={styles["info-curso"]} id='id'>
@@ -91,9 +88,9 @@ export default function CurriculoPage() {
                                                     ))}
                                                 </ol>
                                             </div>
-                                            <img src={i.img} alt="" onClick={() => handleVerCertificado({ nome: i.nome, img: i.img })} />
+                                            <img src={i.img} alt="" onClick={() => handleVerCertificado(i.img)} />
                                             <button className={styles['fechar-item hover']}
-                                                onClick={() => handleFecharInfoCurso}>X</button>
+                                                onClick={() => handleFecharInfoCurso()}>X</button>
                                         </div>
                                     )}
                                 </li>
@@ -103,13 +100,22 @@ export default function CurriculoPage() {
 
                     <div className={styles["tecnologias grid-icons"]} id="sobreMim-tecnologias">
                     </div>
+                </section>
 
-                    <section className={styles["projetos"]}>
-                        <h2>Projetos</h2>
+                <section className={styles["projetos"]}>
+                    <h2>Projetos</h2>
 
-                        <div className={styles["cards"]} id="cards-projetos"></div>
+                    <div className={styles["cards"]} id="cards-projetos">
+                        {perfil.projetos.map((proj, idx) => (
+                            <a key={idx} href={proj.link} className="card hover">
+                                <div className="img-card">
+                                    <img src={proj.img} alt="" />
+                                    <p>{proj.nome}</p>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
 
-                    </section>
                 </section>
 
             </main >

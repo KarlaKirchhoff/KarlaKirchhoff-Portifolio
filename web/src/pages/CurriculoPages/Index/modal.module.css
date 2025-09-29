@@ -1,5 +1,4 @@
 .modal {
-    display: none;
     position: fixed;
     top: 1px;
     height: 90vh;
@@ -14,9 +13,6 @@
     overflow-y: scroll;
 }
 
-.modal.ativo {
-    display: flex !important;
-}
 
 .modal .area-botao {
     padding: 20px;

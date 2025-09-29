@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Gunge';
-    src: url('BAD_GRUNGE.ttf');
+    src: url('/fonts/BAD_GRUNGE.ttf');
 }
 
 @font-face {
     font-family: 'Adelia';
-    src: url('adelia.ttf');
+    src: url('/fonts/adelia.ttf');
 }
 
 :root {
@@ -32,7 +32,7 @@ body {
     width: 100%;
     height: 500px;
     background-repeat: no-repeat;
-    background-image: url('bg-fundo-futurista-anime-cyberpunk.jpg');
+    background-image: url('/img/bg/bg-fundo-futurista-anime-cyberpunk.jpg');
     background-size: cover;
     background-attachment: fixed;
 }

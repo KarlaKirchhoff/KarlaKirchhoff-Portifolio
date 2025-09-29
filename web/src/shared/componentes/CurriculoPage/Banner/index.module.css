@@ -1,4 +1,3 @@
-/* banner */
 .banner {
     width: 90%;
     max-width: var(--max-width-dsktp);
@@ -7,12 +6,57 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
-    background-color: var(--cor-branco-transp);
     transition: var(--bk-transition);
 }
 
+.glass {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+.glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
+}
+
+.glass::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3));
+}
+
+/* .glass:hover {
+    background: rgba(14, 253, 213, 0.089);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+} */
+
 .banner:hover {
     background-color: transparent;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     outline: var(--borda);
 }
 
@@ -160,21 +204,22 @@
     }
 }
 
-@media (max-width: 339px){
+@media (max-width: 339px) {
 
-    .texto-banner h1{
+    .texto-banner h1 {
         font-size: 17px;
     }
 
-    .texto-banner > p{
+    .texto-banner>p {
         font-size: 12px;
     }
 
-    .texto-banner .btn{
+    .texto-banner .btn {
         font-size: 10px;
     }
 
-    .img-banner div{
-        width: 110px; height: 150px;
+    .img-banner div {
+        width: 110px;
+        height: 150px;
     }
 }

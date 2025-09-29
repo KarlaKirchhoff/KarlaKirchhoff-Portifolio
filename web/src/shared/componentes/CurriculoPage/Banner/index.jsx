@@ -3,11 +3,11 @@ import styles from './index.module.css'
 
 export default function Banner_CurriculoPage() {
     return (
-        <div className={styles["banner"]}>
+        <div className={`${styles.banner} ${styles.glass}`}>
             <div className={styles["texto-banner"]}>
                 <h1>Karla Kirchhoff</h1>
                 <p>Estudante Tecnologia</p>
-                <a className="btn" href="https://github.com/KarlaKirchhoff" target="_blank">Acessar Github<ion-icon
+                <a className={styles.btn} href="https://github.com/KarlaKirchhoff" target="_blank">Acessar Github<ion-icon
                     name="logo-github"></ion-icon></a>
             </div>
 

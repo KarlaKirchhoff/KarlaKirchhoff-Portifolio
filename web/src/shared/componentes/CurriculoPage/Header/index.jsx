@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './index.module.css'
+import '../../../../index.css'
 
-export default function Header() {
+export default function Header_CurriculoPage() {
 
-    linksNavbar = [
+    const linksNavbar = [
         { link: "index.html", titulo: "Home" },
         { link: "projetos.html", titulo: "Projetos" },
         { link: "sobre.html", titulo: "Sobre Mim" },
@@ -11,15 +12,15 @@ export default function Header() {
     ]
 
     return (
-        <nav class="navbar">
+        <nav className={styles.navbar}>
             <div className={styles["box-img"]}>
                 <img src="assets/img/perfil.jpg" alt="" className="logo" title="Logo Karla Kirchhoff" />
             </div>
             <address className={styles["address-navbar"]}>
-                <div href="" className={styles["endereco-navbar"]}>
+                <div className={styles["endereco-navbar"]}>
                     <p>IFPR - Instituto Federal do Paraná</p>
-                    <p style="display: flex; align-items: center; gap: 13px">Brasil, Paranagua - PR
-                        <ion-icon name="map-outline" className="icone-navbar"></ion-icon>
+                    <p className='p-1'>Brasil, Paranagua - PR
+                        <ion-icon name="map-outline" className={styles["icone-navbar"]}></ion-icon>
                     </p>
                 </div>
 

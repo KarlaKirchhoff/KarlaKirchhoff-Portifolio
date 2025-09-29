@@ -16,7 +16,7 @@
     --borda: 1px solid var(--cor-branco2);
     --bk-transition: background-color .4s;
     --max-width-dsktp: 1200px;
-    --sec-padding: 20px;
+    --sec-padding: 20%;
     --tamanho-h2: 2.4rem;
     --tamanho-p: 1.5rem;
     --altura-sec-h2: 50px;
@@ -80,20 +80,16 @@ h5 {
 .container>section {
     width: 100%;
     max-width: var(--max-width-dsktp);
-    display: flex;
-    border: var(--borda);
     padding-bottom: 20px;
-
-}
-
-.sobre-mim>div {
-    padding-top: var(--sec-padding-top);
+    display: flex;
+    background-color: red;
+    border: var(--borda);
 }
 
 .projetos {
     display: flex;
     flex-direction: column;
-    padding: var(--sec-padding) 0;
+    padding: 20px 0;
 }
 
 .projetos p {
@@ -114,7 +110,7 @@ h5 {
 .projetos .card {
     width: 23%;
     min-width: 160px;
-    padding: var(--sec-padding);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +147,7 @@ footer {
     gap: 40px 0;
     border: var(--borda);
     margin-top: 100px;
-    padding: 40px var(--sec-padding);
+    padding: 40px 20px;
 }
 
 .footer-icons {
@@ -191,10 +187,6 @@ footer ion-icon {
 @media (max-width: 630px) {
     .address-navbar {
         font-size: 12px;
-    }
-
-    #sobreMim-texto p {
-        text-align: center;
     }
 }
 
