@@ -57,10 +57,6 @@
     margin: 10px 0 5px 0;
 }
 
-.sec-list>div {
-    padding-top: 0;
-}
-
 .list-item {
     border-bottom: var(--borda);
     margin-top: 5px;
