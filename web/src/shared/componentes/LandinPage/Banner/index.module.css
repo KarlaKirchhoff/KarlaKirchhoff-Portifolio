@@ -1,33 +1,3 @@
-@font-face {
-    font-family: 'Gunge';
-    src: url('/fonts/BAD_GRUNGE.ttf');
-}
-
-@font-face {
-    font-family: 'Adelia';
-    src: url('/fonts/adelia.ttf');
-}
-
-:root {
-    --cor-rosa: #FF0062;
-    --cor-verde: #46762C;
-    --cor-verde-musgo: #473F24;
-    --azul-queimado: #345177;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-}
-
-li {list-style: none;}
-
-body {
-    background-color: rgb(0, 0, 0);
-}
-
 .banner {
     width: 100%;
     height: 500px;
@@ -41,7 +11,7 @@ body {
     height: 20%;
 }
 
-.navbar ul{
+.navbar ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -68,7 +38,7 @@ body {
     width: 50%;
 }
 
-.banner-content .txt-area h1{
+.banner-content .txt-area h1 {
     font-family: 'Gunge', sans-serif;
     font-size: 100px;
     letter-spacing: 5px;
@@ -76,7 +46,7 @@ body {
     text-transform: uppercase;
 }
 
-.banner-content .txt-area p{
+.banner-content .txt-area p {
     font-size: 30px;
     font-family: 'Adelia', serif;
     color: #6ae727;
