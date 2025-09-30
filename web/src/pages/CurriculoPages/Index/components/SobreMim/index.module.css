@@ -1,0 +1,208 @@
+.sobre-mim {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/img/bg/fundo-textura-couro.jpg');
+    border-bottom: 1px solid violet;
+    border-top: 1px solid violet;
+    box-shadow: 0 10px 35px rgba(238, 130, 238, 0.555);
+    box-shadow: 0 -10px 35px rgba(238, 130, 238, 0.555);
+}
+
+.sobre-mim>div {
+    width: 90%;
+    padding: 100px 0;
+}
+
+.texto {
+    position: relative;
+    width: 90%;
+}
+
+.texto p {
+    font-family: 'Farsan', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.texto h2 {
+    position: absolute;
+    top: -40px;
+    width: 400px;
+    padding: 20px 0;
+    left: calc(50% - 175px);
+    border-left: var(--borda);
+    border-right: var(--borda);
+    background-color: #141414;
+    border: 1px solid violet;
+    box-shadow: 0 0 35px rgba(238, 130, 238, 0.555);
+}
+
+/* seção de cursos */
+.sec-list {
+    width: 100%;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.562);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 2px solid blue;
+    box-shadow: 0 0 15px blue;
+}
+
+.sec-list h5 {
+    margin: 10px 0 5px 0;
+}
+
+.sec-list>div {
+    padding-top: 0;
+}
+
+.list-item {
+    border-bottom: var(--borda);
+    margin-top: 5px;
+}
+
+.info-list-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--cor-branco-transp);
+}
+
+.info-list-item .nome-instituicao {
+    width: 20%;
+    text-transform: capitalize;
+}
+
+.info-list-item .nome-curso {
+    width: 60%;
+    text-align: left;
+    padding-left: 8px;
+    text-transform: capitalize;
+    border-left: var(--borda);
+    border-right: var(--borda);
+}
+
+.info-list-item .nome-curso>span.linguagens {
+    display: block;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.list-item>span {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.list-item .info-curso {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.list-item .info-curso .fechar-item {
+    font-size: 17px;
+    padding: 10px 0;
+    background-color: transparent;
+    border: var(--borda);
+}
+
+.list-item .info-curso>div {
+    display: flex;
+    gap: 30px;
+}
+
+.list-item .info-curso ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-item .info-curso li {
+    list-style: circle;
+    text-transform: capitalize;
+}
+
+.list-item .info-curso img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 1245px) {
+    .texto {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .sobre-mim {
+        padding: 0 5% !important;
+    }
+
+    .texto {
+        width: 60%;
+    }
+
+    .texto p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 775px) {
+    .texto h2 {
+        left: calc(50% - 200px);
+    }
+}
+
+@media (max-width: 720px) {
+
+    .grid-icons>div {
+        gap: 5px;
+    }
+
+    #sobreMim-interesses>div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .texto h2 {
+        width: 300px;
+        top: -40px;
+        padding: 15px 0;
+        left: calc(50% - 155px);
+    }
+
+}
+
+@media (max-width: 515px) {
+    .texto h2 {
+        position: relative !important;
+        left: inherit;
+        right: inherit;
+        width: 75%;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+
+    .sec-escolaridade p {
+        font-size: 13px;
+    }
+
+    .info-list-item .nome-curso {
+        margin: 0 8px;
+    }
+}

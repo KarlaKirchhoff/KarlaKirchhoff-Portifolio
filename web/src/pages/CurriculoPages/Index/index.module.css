@@ -10,15 +10,6 @@
     background-attachment: fixed;
 }
 
-.sobre-mim {
-    width: 100%;
-    padding: 0 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('/img/bg/fundo-textura-couro.jpg');
-}
-
 .grid-icons {
     width: 90%;
     margin: 0 auto 120px auto;
@@ -61,39 +52,6 @@
     background-color: white;
 }
 
-.sobre-mim {
-    border-bottom: 1px solid violet;
-    border-top: 1px solid violet;
-    box-shadow: 0 10px 35px rgba(238, 130, 238, 0.555);
-    box-shadow: 0 -10px 35px rgba(238, 130, 238, 0.555);
-}
-
-.sobre-mim>div {
-    padding: 100px 0;
-}
-
-.texto {
-    width: 90%;
-    position: relative;
-}
-
-.texto p {
-    font-family: 'Farsan', sans-serif;
-    font-size: 40px;
-}
-
-.texto h2 {
-    position: absolute;
-    top: -40px;
-    width: 400px;
-    padding: 20px 0;
-    left: calc(50% - 175px);
-    border-left: var(--borda);
-    border-right: var(--borda);
-    background-color: #141414;
-    border: 1px solid violet;
-    box-shadow: 0 0 35px rgba(238, 130, 238, 0.555);
-}
 
 .tecnologias {
     display: flex;
@@ -101,104 +59,6 @@
     align-items: end;
 }
 
-/* seção de cursos */
-.sec-list {
-    width: 100%;
-    padding: 55px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.562);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border: 2px solid blue;
-    box-shadow: 0 0 15px blue;
-}
-
-.sec-list h5 {
-    margin: 10px 0 5px 0;
-}
-
-.sec-list>div {
-    padding-top: 0;
-}
-
-.list-item {
-    border-bottom: var(--borda);
-    margin-top: 5px;
-}
-
-.info-list-item {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: var(--cor-branco-transp);
-}
-
-.info-list-item .nome-instituicao {
-    width: 20%;
-    text-transform: capitalize;
-}
-
-.info-list-item .nome-curso {
-    width: 60%;
-    text-align: left;
-    padding-left: 8px;
-    text-transform: capitalize;
-    border-left: var(--borda);
-    border-right: var(--borda);
-}
-
-.info-list-item .nome-curso>span.linguagens {
-    display: block;
-    text-decoration: underline;
-    margin-top: 5px;
-}
-
-.list-item>span {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
-    padding: 10px;
-}
-
-.list-item .info-curso {
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: rgba(0, 0, 0, 0.829);
-}
-
-.list-item .info-curso .fechar-item {
-    font-size: 17px;
-    padding: 10px 0;
-    background-color: transparent;
-    border: var(--borda);
-}
-
-.list-item .info-curso>div {
-    display: flex;
-    gap: 30px;
-}
-
-.list-item .info-curso ol {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.list-item .info-curso li {
-    list-style: circle;
-    text-transform: capitalize;
-}
-
-.list-item .info-curso img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
 
 @media (max-width: 1317px) {
     .grid-icons {
@@ -206,25 +66,10 @@
     }
 }
 
-@media (max-width: 1245px) {
-    .texto {
-        width: 80%;
-    }
-}
 
 @media (max-width: 973px) {
     .grid-icons {
         width: 90%;
-    }
-}
-
-@media (max-width: 800px) {
-    .texto {
-        width: 60%;
-    }
-
-    .texto p {
-        font-size: 20px;
     }
 }
 
@@ -240,9 +85,6 @@
         gap: 5px;
     }
 
-    #sobreMim-interesses>div {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 630px) {
@@ -264,14 +106,6 @@
 }
 
 @media (max-width: 515px) {
-    #sobreMim-index {
-        flex-direction: column;
-    }
-
-    #sobreMim-index>div {
-        width: 100%;
-    }
-
     .grid-icons {
         margin-top: 20px;
         gap: 50px;
@@ -291,18 +125,6 @@
     .grid-icons small {
         padding: 5px 0;
         font-size: 20px;
-    }
-
-    #sobreMim-interesses {
-        margin-bottom: 30px;
-    }
-
-    #sobreMim-texto h2 {
-        position: relative !important;
-    }
-
-    #sobreMim-texto p {
-        padding: 0 30px;
     }
 
     .sec-escolaridade p {

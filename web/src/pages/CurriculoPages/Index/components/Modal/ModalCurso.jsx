@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './modal.module.css'
 
-export default function ModalCurso({ onFechar, dados }) {
+export default function ModalCurso_CurriculoPage({ onFechar, dados }) {
 
     const handleFechar = () => {
         onFechar();
