@@ -13,7 +13,7 @@ export default function Banner_CurriculoPage() {
 
             <div className={styles["img-banner"]}>
                 <div>
-                    <img src="img/perfil-karla-kirchhoff.jpg" alt="Foto de Perfil: Karla Kirchhoff" title="Karla Kirchhoff" />
+                    <img src="img/avatar/karla-kirchhoff.jpg" alt="Foto de Perfil: Karla Kirchhoff" title="Karla Kirchhoff" />
                 </div>
             </div>
         </div>

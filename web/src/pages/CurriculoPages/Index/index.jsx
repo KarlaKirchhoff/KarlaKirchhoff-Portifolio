@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './index.module.css'
 import Header from '../../../shared/componentes/CurriculoPage/Header';
 import Banner from '../../../shared/componentes/CurriculoPage/Banner';
+import Projetos from '../../../shared/componentes/CurriculoPage/Projeto/ContProj';
 import SobreMim from './components/SobreMim';
 
 import Perfil from '../../../models/Perfil';
@@ -11,6 +12,7 @@ export default function CurriculoPage() {
 
     const interesses = perfil.interesses;
     const cursos = perfil.cursos;
+    const projetos = perfil.projetos;
 
     return (
         <>
@@ -35,19 +37,8 @@ export default function CurriculoPage() {
                 />
 
                 <section className={styles["projetos"]}>
-                    <h2>Projetos</h2>
-
-                    <div className={styles["cards"]} id="cards-projetos">
-                        {perfil.projetos.map((proj, idx) => (
-                            <a key={idx} href={proj.link} className="card hover">
-                                <div className="img-card">
-                                    <img src={proj.img} alt="" />
-                                    <p>{proj.nome}</p>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-
+                    <h2 className={styles.glass}>Projetos</h2>
+                    <Projetos projetos={projetos} />
                 </section>
 
             </main >
