@@ -63,10 +63,12 @@
 }
 
 .info-list-item {
-    display: flex;
     width: 100%;
+    padding: 10px 20px;
+    display: flex;
     justify-content: space-between;
-    padding: 10px;
+    flex-wrap: wrap;
+    gap: 0 8px;
     background-color: var(--cor-branco-transp);
 }
 
@@ -162,6 +164,22 @@
     }
 }
 
+@media (max-width: 733px) {
+    .info-list-item .nome-instituicao {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: #332991;
+    }
+
+    .info-list-item .nome-curso {
+        width: 70%;
+        padding: 0 10px;
+        border-left: none;
+    }
+}
+
 @media (max-width: 720px) {
 
     .grid-icons>div {
@@ -184,6 +202,30 @@
 
 }
 
+@media (max-width: 520px) {
+    .sec-list {
+        padding: 35px;
+    }
+
+    .info-list-item>h5 {
+        width: 100% !important;
+        border-left: none !important;
+        border-right: none !important;
+        overflow-x: hidden;
+    }
+
+    .info-list-item .nome-curso {
+        margin: 0 0 10px 0 !important;
+        padding: 0 10px !important;
+    }
+
+    .info-list-item .duracao {
+        padding: 10px;
+        color: rgb(230, 217, 162);
+        border-top: var(--borda);
+    }
+}
+
 @media (max-width: 515px) {
     .texto h2 {
         position: relative !important;
@@ -200,5 +242,20 @@
 
     .info-list-item .nome-curso {
         margin: 0 8px;
+    }
+}
+
+@media (max-width: 290px){
+    .info-list-item>h5 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 240px){
+    .sec-list {
+        padding: 35px 20px;
     }
 }
