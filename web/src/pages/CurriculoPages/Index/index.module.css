@@ -215,6 +215,19 @@ section.projetos h2 {
     }
 }
 
+@media (max-width: 434px) {
+
+    section.projetos h2 {
+        width: 80%;
+        margin: 90px auto 60px auto;
+        padding: 15px;
+        color: rgb(250, 114, 255);
+        text-shadow: 0 0 15px rgb(247, 0, 255);
+        border: 2px solid rgb(247, 0, 255);
+        box-shadow: 0 0 15px rgb(247, 0, 255);
+    }
+}
+
 @media (max-width: 383px) {
     .grid-icons small {
         font-size: 15px;

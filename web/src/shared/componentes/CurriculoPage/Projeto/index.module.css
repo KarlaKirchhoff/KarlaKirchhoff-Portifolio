@@ -71,3 +71,22 @@
     padding: 3px 8px;
     background-color: rgb(1, 128, 111);
 }
+
+
+@media (max-width: 900px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 510px) {
+    .card {
+        height: 250px;
+    }
+}
+
+@media (max-width: 434px) {
+    .card {
+        width: 80%;
+    }
+}

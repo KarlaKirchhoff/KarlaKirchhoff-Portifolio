@@ -14,7 +14,7 @@ export default function Header_CurriculoPage() {
     return (
         <nav className={styles.navbar}>
             <div className={styles["box-img"]}>
-                <img src="assets/img/perfil.jpg" alt="" className="logo" title="Logo Karla Kirchhoff" />
+                <img src="img/avatar/karla-kirchhoff.jpg" alt="" className={styles.logo} title="Logo Karla Kirchhoff" />
             </div>
             <address className={styles["address-navbar"]}>
                 <div className={styles["endereco-navbar"]}>
