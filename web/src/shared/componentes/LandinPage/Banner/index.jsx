@@ -16,9 +16,10 @@ export default function Banner_LandingPage() {
 
                     <div className={styles["banner-content"]}>
                         <div className={styles["txt-area"]}>
-                            <h1>Karla Kirchhoff</h1>
                             <div className={styles["h2-area"]}><h2 className={styles.h2DevWeb}>Desenvolvimento Web</h2>
-                                <h2 className={styles.h2Layout}>Layout e Design</h2></div>
+                                <h2 className={styles.h2Layout}>Layout e Design</h2>
+                            </div>
+                            <h1>Karla Kirchhoff</h1>
                             <p>Fullstack</p>
                         </div>
                         <div className={styles["img-area"]}>

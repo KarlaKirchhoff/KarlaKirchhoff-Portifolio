@@ -1,6 +1,6 @@
 .banner {
     width: 100%;
-    height: 500px;
+    height: 530px;
     background-repeat: no-repeat;
     background-image: url('/img/bg/bg-fundo-futurista-anime-cyberpunk.jpg');
     background-size: cover;
@@ -27,8 +27,6 @@
     width: 100%;
     height: 100%;
     padding: 50px;
-    padding-bottom: 50px;
-
     background-color: rgba(0, 0, 0, 0.676);
 }
 
@@ -44,12 +42,14 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     gap: 10px;
 }
 
 .banner-content .txt-area h1 {
+    width: 100%;
     font-family: 'Gunge', sans-serif;
+    text-align: start;
     font-size: 150px;
     letter-spacing: 5px;
     line-height: 70%;
@@ -58,8 +58,8 @@
 
 .h2-area {
     width: 100%;
-    margin-top: 90px;
     padding: 5px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: flex-start;
     background-color: #FF0062;
@@ -71,15 +71,15 @@
 
 .banner-content .txt-area p {
     position: absolute;
-    top: 250px;
-    left: 100px;
+    bottom: 80px;
+    left: 15%;
     font-size: 80px;
     font-family: 'Adelia', serif;
-    text-indent: 100px;
-    color: #d127e7;
+    text-indent: 0;
+    color: #6ae727;
     text-shadow: 0 0 15px;
 
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
 }
 
 .banner-content .img-area {
@@ -93,8 +93,11 @@
 
 .banner-content .img-avatar {
     height: 100%;
+    width: 50%;
     background-color: #FF0062;
     border: 2px solid white;
+    object-fit: cover;
+    object-position: 0 20%;
 }
 
 .linha {
@@ -105,42 +108,287 @@
 }
 
 
-@media (max-width: 930px) {
+@media (max-width: 1783px) {
+    .banner-content .txt-area h1 {
+        font-size: 130px;
+    }
+
+    .banner-content .img-avatar {
+        height: 100%;
+        background-color: #FF0062;
+        border: 2px solid white;
+    }
+}
+
+@media (max-width: 1592px) {
+    .banner-content .txt-area p {
+        bottom: 20px;
+        left: inherit;
+    }
+}
+
+@media (max-width: 1264px) {
+    .banner-content .txt-area h2 {
+        font-size: 20px;
+    }
+
+    .banner-content .img-avatar {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1055px) {
 
     .banner-content {
-        padding-left: 30px;
+        width: 100%;
+        padding-left: 50px;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h2-area {
+        gap: 20px;
+    }
+
+    .banner-content .img-area {
+        align-items: end;
+    }
+
+    .banner-content .img-avatar {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 891px) {
+    .banner-content {
+        padding-left: 0;
     }
 
     .banner-content .txt-area h1 {
         font-size: 100px;
     }
 
-    .h2-area {
-        margin-top: 0;
-        flex-direction: column;
-        gap: 10px;
+    .banner-content .txt-area p {
+        bottom: 30px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 753px) {
+    .banner-content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 674px) {
+    .banner-content .img-avatar {
+        object-position: center center;
+    }
+}
+
+@media (max-width: 656px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 80px;
     }
 
     .banner-content .txt-area p {
-        top: inherit;
-        bottom: -50px;
-        left: 0;
-        color: #6ae727;
+        bottom: 30px;
+        font-size: 40px;
+    }
+
+    .h2-area {
+        width: 120%;
     }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 572px) {
+    .banner {
+        height: 350px;
+    }
+
+    .banner-content .txt-area h2 {
+        font-size: 15px;
+    }
+
     .banner-content .txt-area h1 {
-        font-size: 90px;
+        font-size: 70px;
+    }
+
+    .banner-content .txt-area p {
+        bottom: 30px;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 486px) {
+    .camada-cor {
+        padding: 40px 30PX;
+    }
+
+    .h2-area {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 486px) {
+    .banner {
+        height: 300px;
+    }
+
+    .camada-cor {
+        padding: 40px 30px;
+    }
+
+    .h2-area {
+        width: 100%;
+    }
+
+    .banner-content .txt-area {
+        width: 65%;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 60px;
+    }
+
+    .banner-content .img-area {
+        width: 30%;
+    }
+
+    .banner-content .img-area img {
+        width: 100%;
     }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 400px) {
     .camada-cor {
-        padding: 50px 0;
+        padding: 40px 30px;
     }
 
-    .navbar{
-        padding: 0 30px;
+    .h2-area {
+        margin-bottom: 0;
     }
+
+    .banner-content .txt-area h2 {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 378px) {
+    .banner {
+        height: 550px;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
+    }
+
+    .navbar {
+        height: 8%;
+    }
+
+    .banner-content .txt-area {
+        width: 100%;
+        height: 40%;
+    }
+
+    .banner-content .txt-area h2 {
+        font-size: 15px;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 70px;
+        text-align: end;
+    }
+
+    .banner-content .txt-area p {
+        bottom: inherit;
+        top: 210px;
+        font-size: 45px;
+        left: 15%;
+    }
+
+    .banner-content .img-area {
+        width: 100%;
+        height: 50%;
+        margin-top: 100px;
+    }
+
+    .banner-content .img-area img {
+        object-position: center -30px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .banner-content .txt-area p {
+        left: inherit;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .banner {
+        height: 500px;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 60px;
+    }
+
+    .banner-content .txt-area p {
+        top: 200px;
+        font-size: 35px;
+        left: 15%;
+    }
+
+    .banner-content .img-area {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 282px) {
+
+    .camada-cor {
+        padding: 30px 20px;
+    }
+
+    .h2-area {
+        flex-direction: column;
+        background-color: transparent;
+        gap: 5px;
+    }
+
+    .h2-area.h2-area h2 {
+        background-color: #a200ff;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 50px;
+    }
+
+    .banner-content .txt-area p {
+        top: 185px;
+    }
+
+}
+
+@media (max-width: 282px) {
+    .banner-content .txt-area p {
+        left: inherit;
+    }
+
 }
