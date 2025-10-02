@@ -1,0 +1,394 @@
+.banner {
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-image: url('/img/bg/bg-fundo-futurista-anime-cyberpunk.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    height: 20%;
+}
+
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.camada-cor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.676);
+}
+
+.banner-content {
+    width: 100%;
+    padding-left: 100px;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content .txt-area {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.banner-content .txt-area h1 {
+    width: 100%;
+    font-family: 'Gunge', sans-serif;
+    text-align: start;
+    font-size: 150px;
+    letter-spacing: 5px;
+    line-height: 70%;
+    text-transform: uppercase;
+}
+
+.h2-area {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #FF0062;
+}
+
+.banner-content .txt-area h2 {
+    font-size: 25px;
+}
+
+.banner-content .txt-area p {
+    position: absolute;
+    bottom: 80px;
+    left: 15%;
+    font-size: 80px;
+    font-family: 'Adelia', serif;
+    text-indent: 0;
+    color: #6ae727;
+    text-shadow: 0 0 15px;
+
+    transform: rotate(-8deg);
+}
+
+.banner-content .img-area {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.banner-content .img-avatar {
+    height: 100%;
+    width: 50%;
+    background-color: #FF0062;
+    border: 2px solid white;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.linha {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    outline: 10px solid black;
+}
+
+
+@media (max-width: 1783px) {
+    .banner-content .txt-area h1 {
+        font-size: 130px;
+    }
+
+    .banner-content .img-avatar {
+        height: 100%;
+        background-color: #FF0062;
+        border: 2px solid white;
+    }
+}
+
+@media (max-width: 1592px) {
+    .banner-content .txt-area p {
+        bottom: 20px;
+        left: inherit;
+    }
+}
+
+@media (max-width: 1264px) {
+    .banner-content .txt-area h2 {
+        font-size: 20px;
+    }
+
+    .banner-content .img-avatar {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1055px) {
+
+    .banner-content {
+        width: 100%;
+        padding-left: 50px;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h2-area {
+        gap: 20px;
+    }
+
+    .banner-content .img-area {
+        align-items: end;
+    }
+
+    .banner-content .img-avatar {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 891px) {
+    .banner-content {
+        padding-left: 0;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 100px;
+    }
+
+    .banner-content .txt-area p {
+        bottom: 30px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 753px) {
+    .banner-content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 674px) {
+    .banner-content .img-avatar {
+        object-position: center center;
+    }
+}
+
+@media (max-width: 656px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 80px;
+    }
+
+    .banner-content .txt-area p {
+        bottom: 30px;
+        font-size: 40px;
+    }
+
+    .h2-area {
+        width: 120%;
+    }
+}
+
+@media (max-width: 572px) {
+    .banner {
+        height: 350px;
+    }
+
+    .banner-content .txt-area h2 {
+        font-size: 15px;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 70px;
+    }
+
+    .banner-content .txt-area p {
+        bottom: 30px;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 486px) {
+    .camada-cor {
+        padding: 40px 30PX;
+    }
+
+    .h2-area {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 486px) {
+    .banner {
+        height: 300px;
+    }
+
+    .camada-cor {
+        padding: 40px 30px;
+    }
+
+    .h2-area {
+        width: 100%;
+    }
+
+    .banner-content .txt-area {
+        width: 65%;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 60px;
+    }
+
+    .banner-content .img-area {
+        width: 30%;
+    }
+
+    .banner-content .img-area img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .camada-cor {
+        padding: 40px 30px;
+    }
+
+    .h2-area {
+        margin-bottom: 0;
+    }
+
+    .banner-content .txt-area h2 {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 378px) {
+    .banner {
+        height: 550px;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
+    }
+
+    .navbar {
+        height: 8%;
+    }
+
+    .banner-content .txt-area {
+        width: 100%;
+        height: 40%;
+    }
+
+    .banner-content .txt-area h2 {
+        font-size: 15px;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 70px;
+        text-align: end;
+    }
+
+    .banner-content .txt-area p {
+        bottom: inherit;
+        top: 210px;
+        font-size: 45px;
+        left: 15%;
+    }
+
+    .banner-content .img-area {
+        width: 100%;
+        height: 50%;
+        margin-top: 100px;
+    }
+
+    .banner-content .img-area img {
+        object-position: center -30px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .banner-content .txt-area p {
+        left: inherit;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .banner {
+        height: 500px;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 60px;
+    }
+
+    .banner-content .txt-area p {
+        top: 200px;
+        font-size: 35px;
+        left: 15%;
+    }
+
+    .banner-content .img-area {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 282px) {
+
+    .camada-cor {
+        padding: 30px 20px;
+    }
+
+    .h2-area {
+        flex-direction: column;
+        background-color: transparent;
+        gap: 5px;
+    }
+
+    .h2-area.h2-area h2 {
+        background-color: #a200ff;
+    }
+
+    .banner-content .txt-area h1 {
+        font-size: 50px;
+    }
+
+    .banner-content .txt-area p {
+        top: 185px;
+    }
+
+}
+
+@media (max-width: 282px) {
+    .banner-content .txt-area p {
+        left: inherit;
+    }
+
+}
